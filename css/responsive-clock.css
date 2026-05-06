@@ -221,6 +221,18 @@
 
 .flip-clock-wrapper {
   margin: 2em auto !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+.flip-clock-wrapper ul {
+  display: inline-block !important;
+  vertical-align: top !important;
+}
+
+.flip-clock-divider {
+  display: inline-block !important;
+  vertical-align: top !important;
 }
 
 .flip-clock-divider .flip-clock-label {
@@ -228,4 +240,5 @@
   font-size: 14px !important;
   font-weight: bold !important;
   font-family: Sofia Sans Condensed !important; 
+  white-space: nowrap !important;
 }
