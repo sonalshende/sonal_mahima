@@ -223,14 +223,15 @@
 				margin-left: 0 !important;
 				padding: 0 10px;
 			}
+			/* Hide flip clock on mobile, show simple countdown */
 			.flipTimebox {
-				transform: scale(0.85);
-				transform-origin: center center;
-				animation: none;
-				max-width: 100%;
+				display: none !important;
 			}
-			.flipTimebox .flip-clock-wrapper {
-				margin: 1em auto !important;
+			.mobile-countdown {
+				display: flex !important;
+				justify-content: center;
+				gap: 10px;
+				flex-wrap: nowrap;
 			}
 			.fh5co-nav ul li a {
 				font-size: 11px !important;
@@ -257,13 +258,6 @@
 			.wedding-quote {
 				font-size: 13px !important;
 			}
-			.flipTimebox {
-				transform: scale(0.7);
-				transform-origin: center center;
-			}
-			.flipTimebox .flip-clock-wrapper {
-				margin: 1em auto !important;
-			}
 			.btn-wedding {
 				padding: 8px 20px !important;
 				font-size: 12px !important;
@@ -277,6 +271,46 @@
 			.event-wrap h3 {
 				font-size: 24px !important;
 			}
+			.mobile-countdown {
+				gap: 6px;
+			}
+			.mobile-countdown .cd-box {
+				min-width: 55px;
+				padding: 8px 5px;
+			}
+			.mobile-countdown .cd-box span {
+				font-size: 22px;
+			}
+			.mobile-countdown .cd-box p {
+				font-size: 9px;
+			}
+		}
+
+		/* Simple mobile countdown styles */
+		.mobile-countdown {
+			display: none;
+			text-align: center;
+			margin: 20px 0;
+		}
+		.mobile-countdown .cd-box {
+			background: rgba(0,0,0,0.6);
+			border-radius: 10px;
+			padding: 12px 8px;
+			min-width: 65px;
+		}
+		.mobile-countdown .cd-box span {
+			display: block;
+			font-size: 28px;
+			font-weight: 700;
+			color: #fff;
+			line-height: 1;
+		}
+		.mobile-countdown .cd-box p {
+			margin: 5px 0 0 0;
+			font-size: 10px;
+			color: rgba(255,255,255,0.8);
+			text-transform: uppercase;
+			letter-spacing: 1px;
 		}
 	</style>
 	
@@ -341,9 +375,16 @@
 							<h2 class="wedding-date">24.05.2026</h2>
 							<p class="ornament">~ Together Forever ~</p>
 							<h2 class="wedding-quote">"I have found the one whom my soul loves."<br><small>— Song of Solomon 3:4</small></h2>
-							<div class="flipTimebox" style="display: flex; justify-content: center;">
-								<div class="clock clock-fix"></div>
-							  </div>
+							<div class="flipTimebox" style="display: flex; justify-content: center; width: 100%;">
+								<div class="clock clock-fix" style="white-space: nowrap;"></div>
+							</div>
+							<!-- Mobile-friendly countdown (shown only on small screens) -->
+							<div class="mobile-countdown" id="mobile-countdown">
+								<div class="cd-box"><span id="mc-days">0</span><p>Days</p></div>
+								<div class="cd-box"><span id="mc-hours">0</span><p>Hours</p></div>
+								<div class="cd-box"><span id="mc-mins">0</span><p>Mins</p></div>
+								<div class="cd-box"><span id="mc-secs">0</span><p>Secs</p></div>
+							</div>
 							<br>
 							<p><a href="#fh5co-event" class="btn btn-wedding" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; color: #000; padding: 14px 40px; border-radius: 50px; font-size: 16px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); text-decoration: none; max-width: 90%; word-wrap: break-word;">💌 You're Invited</a></p>
 						</div>
@@ -451,5 +492,33 @@
 		<p style="font-size: 20px; margin: 0;">Made with 💕 for our special day</p>
 		<p style="margin: 5px 0; opacity: 0.8;">Sonal & Mahima • 24 May 2026</p>
 	</div>
+
+	<!-- Mobile countdown script -->
+	<script>
+	(function() {
+		var weddingDate = new Date('2026-05-24T12:15:00+05:30').getTime();
+		function updateMobileCountdown() {
+			var now = new Date().getTime();
+			var diff = weddingDate - now;
+			if (diff <= 0) {
+				document.getElementById('mc-days').textContent = '0';
+				document.getElementById('mc-hours').textContent = '0';
+				document.getElementById('mc-mins').textContent = '0';
+				document.getElementById('mc-secs').textContent = '0';
+				return;
+			}
+			var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+			var secs = Math.floor((diff % (1000 * 60)) / 1000);
+			document.getElementById('mc-days').textContent = days;
+			document.getElementById('mc-hours').textContent = hours;
+			document.getElementById('mc-mins').textContent = mins;
+			document.getElementById('mc-secs').textContent = secs;
+		}
+		updateMobileCountdown();
+		setInterval(updateMobileCountdown, 1000);
+	})();
+	</script>
 	</body>
 </html>
