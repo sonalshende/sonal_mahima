@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sonal ❤️ Mahima - 24.05.2026</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We are getting hitched - The date is 25th May '26 and we would like you to be a part of it." />
+	<meta name="keywords" content="sonal,mahima,wedding,website,rsvp" />
+	<meta name="author" content="Sonal & Mahima" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:image" content="images/og.jpg"/>
+	<meta property="og:site_name" content="Sonal ❤️ Mahima - 24.05.2026">
+    <meta property="og:title" content="Sonal ❤️ Mahima - 24.05.2026">
+    <meta property="og:description" content="We are getting hitched - The date is 25th May '26 and we would like you to be a part of it.">
+	<!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <!-- Website to visit when clicked in fb or WhatsApp-->
+    <meta property="og:url" content="https://we.shyamjos.com">
+	<meta property="og:type" content="website"/>
+    <meta property="og:image:type" content="image/jpeg">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	
+	<!-- Custom Wedding Styles -->
+	<style>
+		/* Floating hearts animation */
+		.hearts-bg {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			z-index: 9998;
+			overflow: hidden;
+		}
+		.heart {
+			position: absolute;
+			top: -50px;
+			font-size: 20px;
+			animation: floatUp 8s ease-in infinite;
+			opacity: 0.7;
+		}
+		@keyframes floatUp {
+			0% { transform: translateY(-100vh) rotate(0deg) translateX(0); opacity: 0.8; }
+			25% { transform: translateY(-50vh) rotate(90deg) translateX(30px); opacity: 0.7; }
+			50% { transform: translateY(0) rotate(180deg) translateX(-20px); opacity: 0.6; }
+			75% { transform: translateY(50vh) rotate(270deg) translateX(25px); opacity: 0.4; }
+			100% { transform: translateY(100vh) rotate(360deg) translateX(-10px); opacity: 0; }
+		}
+		
+		/* Enhanced heading styles */
+		#fh5co-header h1 {
+			font-family: 'Great Vibes', cursive !important;
+			font-size: 72px !important;
+			text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+			letter-spacing: 2px;
+		}
+		#fh5co-header h2 {
+			font-family: 'Playfair Display', serif !important;
+			font-style: italic;
+			text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+		}
+		
+		/* Sparkle effect on date */
+		.wedding-date {
+			display: inline-block;
+			background: linear-gradient(135deg, #f5af19, #f12711, #f5af19);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 200% auto;
+			animation: shimmer 3s linear infinite;
+			font-size: 36px !important;
+			font-weight: 700;
+		}
+		@keyframes shimmer {
+			0% { background-position: 0% center; }
+			100% { background-position: 200% center; }
+		}
+		
+		/* Enhanced Save the Date button */
+		.btn-wedding {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+			border: none !important;
+			color: #000 !important;
+			padding: 14px 40px !important;
+			border-radius: 50px !important;
+			font-size: 16px !important;
+			font-weight: 600 !important;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+			transition: all 0.3s ease !important;
+		}
+		.btn-wedding:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+		}
+		
+		/* Event section enhancements */
+		#fh5co-event h2 {
+			font-family: 'Great Vibes', cursive !important;
+			font-size: 48px !important;
+			color: #fff;
+		}
+		.event-wrap {
+			border-radius: 15px !important;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.1) !important;
+			transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+		}
+		.event-wrap:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
+		}
+		.event-wrap h3 {
+			font-family: 'Great Vibes', cursive !important;
+			font-size: 36px !important;
+			color: #764ba2;
+		}
+		
+		/* Decorative divider */
+		.ornament {
+			font-size: 28px;
+			color: rgba(255,255,255,0.8);
+			margin: 15px 0;
+			letter-spacing: 10px;
+		}
+		
+		/* Quote styling */
+		.wedding-quote {
+			font-family: 'Playfair Display', serif !important;
+			font-style: italic;
+			font-size: 18px !important;
+			opacity: 0.9;
+			max-width: 500px;
+			margin: 0 auto;
+			line-height: 1.6;
+		}
+
+		/* Nav enhancement */
+		.fh5co-nav ul li a {
+			font-weight: 600 !important;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 13px !important;
+		}
+
+		/* Pulse animation for countdown */
+		.flipTimebox {
+			animation: pulse 2s ease-in-out infinite;
+		}
+		@keyframes pulse {
+			0%, 100% { transform: scale(1); }
+			50% { transform: scale(1.02); }
+		}
+
+		/* Footer with love */
+		.wedding-footer {
+			text-align: center;
+			padding: 30px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: #fff;
+			font-family: 'Playfair Display', serif;
+			font-style: italic;
+		}
+	</style>
+	
+	<!-- clock   -->
+	<link rel="stylesheet" href="css/responsive-clock.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+	
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="#fh5co-event">Events</a></li>
+						<li class="active"><a href="#fh5co-started">RSVP</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Sonal &amp; Mahima</h1>
+							<br>
+							<img src="images/fprint.png" alt="Sonal + Mahima"> 
+							<h2 class="wedding-date">24.05.2026</h2>
+							<p class="ornament">~ Together Forever ~</p>
+							<h2 class="wedding-quote">"I have found the one whom my soul loves."<br><small>— Song of Solomon 3:4</small></h2>
+							<div class="flipTimebox" style="display: flex; justify-content: center;">
+								<div class="clock clock-fix"></div>
+							  </div>
+							<br>
+							<p><a href="#fh5co-event" class="btn btn-wedding" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; color: #000; padding: 14px 40px; border-radius: 50px; font-size: 16px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); text-decoration: none;">💌 You're Invited</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<div id="fh5co-event" class="fh5co-bg">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>✨ Celebrations ✨</h2>
+					<p style="color: rgba(255,255,255,0.8); font-family: 'Playfair Display', serif; font-style: italic; font-size: 16px;">We would be honoured to have you join us</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box" style="background-image: url('images/sangeet.jpg'); background-size: cover; background-position: center; position: relative;">
+									<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.65); border-radius: inherit;"></div>
+									<div style="position: relative; z-index: 1;">
+									<h3>Sangeet</h3>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>23 May 2026</span>
+									</div>
+									<div class="event-col">
+
+										<i class="icon-clock"></i>
+										<span>7:00 PM</span>
+									</div>
+									<p>🎶 Join us for an evening of music, dance & celebration!<br><b>📍 The Heritage</b><br>Balapur Rd, near Tata Showroom,<br>Akola, Maharashtra 444302</p>
+									<a href="https://maps.app.goo.gl/17wU9wNqm48WavUs9" target="_blank" style="display: inline-block; padding: 10px 25px; background: transparent; color: #333; border-radius: 30px; text-decoration: none; font-weight: 600; border: 2px solid #333; transition: all 0.3s ease;">View on Map</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box" style="background-image: url('images/wedding.jpg'); background-size: cover; background-position: center; position: relative;">
+									<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.65); border-radius: inherit;"></div>
+									<div style="position: relative; z-index: 1;">
+									<h3>Wedding</h3>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>24 May 2026</span>
+									</div>
+									<div class="event-col">
+
+										<i class="icon-clock"></i>
+										<span>12:15 PM</span>
+									</div>
+									<p>💒 Join us as we begin our forever together!<br><b>📍 The Heritage</b><br>Balapur Rd, near Tata Showroom,<br>Akola, Maharashtra 444302</p>
+									<a href="https://maps.app.goo.gl/17wU9wNqm48WavUs9" target="_blank" style="display: inline-block; padding: 10px 25px; background: transparent; color: #333; border-radius: 30px; text-decoration: none; font-weight: 600; border: 2px solid #333; transition: all 0.3s ease;">View on Map</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+    <!-- clock -->
+	<script src="js/clock.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<script src='https://momentjs.com/downloads/moment.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js'></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<!-- Wedding Footer -->
+	<div class="wedding-footer">
+		<p style="font-size: 20px; margin: 0;">Made with 💕 for our special day</p>
+		<p style="margin: 5px 0; opacity: 0.8;">Sonal & Mahima • 24 May 2026</p>
+	</div>
+	</body>
+</html>
